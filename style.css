@@ -1,4 +1,71 @@
 body {
     background-color: #F4F4F4;
-    font-family: serif;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    height: 300px;
+    position: relative;
+}
+
+.buttons::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    right: -20px;
+    width: 0.2px;
+    height: 120%;
+    background-color: black;
+
+}
+
+button {
+    background-color: #FFF;
+    border: 1px solid #242333;
+    border-radius: 5px;
+    padding: 8px 20px;
+    font-weight: bold;
+}
+
+.output {
+    width: 63%;
+    position: relative;
+}
+
+.output h3 {
+    margin-top: 0;
+    position: relative;
+}
+
+h3::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 0.1px;
+    background-color: black;
+}
+
+.output span {
+    position: absolute;
+    right: 0;
 }
